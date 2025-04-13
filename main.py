@@ -52,6 +52,7 @@ def construct_persona_response():
         model="gpt-4o",
         response_format={"type": 'json_object'},
         messages = messages
+         max_tokens=3000 
     )
     return response    
 
