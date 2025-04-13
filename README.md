@@ -1,5 +1,7 @@
 # Persona Chat App
 
+Demo Url: https://personademo.streamlit.app/
+
 A streamlit-based application that allows users to chat with AI personas mimicking different personalities based on script samples.
 
 ## Project Overview
