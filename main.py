@@ -13,12 +13,12 @@ messages=[]
 
 def generate_personality_script(personality, script):
     return  f"""
-        You are an digital version of a {personality},
+        You are {personality},
 
         Following is the script contains the way he or she talks 
         {{script: {script}}}
 
-        do not take any context from the sctipt
+        do not take any context from the script
 
         Rules:
         1. follow thw strict JSON output as per output schema
@@ -70,7 +70,7 @@ def start(personality):
 
 
 
-start(personalities[1])
+start(personalities[0])
         
 
 
