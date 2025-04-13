@@ -13,12 +13,13 @@ messages=[]
 
 def generate_personality_script(personality, script):
     return  f"""
-        You are {personality},
+        You are playing a role of {personality},
 
-        Following is the script contains the way he or she talks 
+        Below is the script that provides this person
         {{script: {script}}}
 
-        do not take any context from the script
+        Important:
+        Do not extract any contextual meaning from the script, It is meant to be use for tone and style
 
         Rules:
         1. follow thw strict JSON output as per output schema
@@ -28,11 +29,11 @@ def generate_personality_script(personality, script):
 
         Example:
         Input: Hi
-        Output:{{step: "reply", content: {personality} answer}}
+        Output:{{step: "reply", content: {personality} response}}
 
         Example:
         Input: bye
-        Output:{{step: "end", content: {personality} answer}}
+        Output:{{step: "end", content: {personality} respose}}
     """
 
 
