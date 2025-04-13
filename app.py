@@ -24,11 +24,6 @@ if 'message_input' not in st.session_state:
 def on_personality_change():
     # Clear message input when personality changes
     st.session_state.message_input = ""
-    # Also reset the chat if needed
-    if st.session_state.current_personality != st.session_state.selected_personality:
-        st.session_state.current_personality = st.session_state.selected_personality
-        st.session_state.chat_history = []
-        st.session_sta
 
 
 def handle_submit():
